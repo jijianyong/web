@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-    <button id="btn">点我</button>
+    <button id="btn">点我影藏图片</button>
     <div id="img">
         <img src="./img/flag.png" alt="1">
     </div>
@@ -30,10 +30,11 @@
         btn.addEventListener("click", function() {
             item++;
             if(item % 2 === 1) {
-                img.src = "./img/mine.png";
+                img.style.display = "none";
+                btn.innerHTML = "点我显示图片";
             } else {
-                img.src = "./img/flag.png";
-            }
+                img.style.display = "block";
+                btn.innerHTML = "点我影藏图片";            }
         }, false)
         
 
