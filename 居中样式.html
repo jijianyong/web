@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>居中样式</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            position: absolute;
+            width: 100%;
+            height: 200px;
+            background-color: black;
+        }
+
+        .left {
+            position: absolute;
+            width: 100px;
+            height: 200px;
+            top: 0;
+            left: 0;
+            background-color: red;
+        }
+
+        .right {
+            position: absolute;
+            width: 100px;
+            height: 200px;
+            top: 0;
+            right: 0;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">中间主体区域宽度自适应</div>
+    <div class="left">左侧定宽200px</div>
+    <div class="right">右侧定宽300px</div>
+</body>
+
+</html>
