@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件-点击按钮切换图片</title>
+    <style>
+        #img {
+            width: 100px;
+            height: 100px;
+            border: 2px solid tomato;
+        }
+        #img img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">点我</button>
+    <div id="img">
+        <img src="./img/flag.png" alt="1">
+    </div>
+    <script>
+        var btn = document.getElementById('btn'),
+            imgDiv = document.getElementById('img'),
+            img = imgDiv.children[0],
+            item = 0;
+        
+        btn.addEventListener("click", function() {
+            item++;
+            if(item % 2 === 1) {
+                img.src = "./img/mine.png";
+            } else {
+                img.src = "./img/flag.png";
+            }
+        }, false)
+        
+
+
+
+    </script>
+</body>
+</html>
